@@ -32,11 +32,11 @@ function showElement(id){
  */
 
 function nextQuestion(questionNo){
-  questionId = "question" + questionNo
-  hideElement(questionId)
-  questionNo ++
-  nextId =  "question" + questionNo
-  showElement(nextId)
+  questionId = "question" + questionNo;
+  hideElement(questionId);
+  questionNo ++;
+  nextId =  "question" + questionNo;
+  showElement(nextId);
 }
 
 /**
@@ -50,9 +50,9 @@ function nextQuestion(questionNo){
 }
   
 /**
- * calculates and displays the results
- */
- function calculateResults() {
+* calculates and displays the results
+*/
+function calculateResults() {
   const radios1 = document.querySelectorAll('input[name="quest1"]');
   let q1Value;
   for (const rb of radios1) {
